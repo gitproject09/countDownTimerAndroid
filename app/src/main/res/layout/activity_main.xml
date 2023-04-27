@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.sopan.countdown.CountDownTextview
+        android:id="@+id/easyCountDownTextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        app:colonColor="#000"
+        app:days="0"
+        app:daysLabel="D"
+        app:digitBackground="@android:color/transparent"
+        app:hours="1"
+        app:minute="1"
+        app:second="8"
+        app:setAnimation="true"
+        app:showDays="true"
+        app:showHours="true"
+        app:showOnlySecond="false"
+        app:start_automatically="false"
+        app:textColor="#E91E63"
+        app:textSize="30sp"
+        app:useBanglaNumeral="true" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/easyCountDownTextview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/iranyekanmediumfanum"
+        android:onClick="startBtn_onClick"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/pause_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/iranyekanmediumfanum"
+        android:onClick="pauseBtn_onClick"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/resume_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pause_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/iranyekanmediumfanum"
+        android:onClick="resumeBtn_onClick"
+        android:text="Resume" />
+
+</RelativeLayout>
